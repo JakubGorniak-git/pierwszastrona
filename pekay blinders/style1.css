@@ -1,0 +1,71 @@
+@font-face {
+font-family:'peaky';
+src:url(peaky.otf);
+}
+body { 
+background-image :url(tlo2.png);
+background-size: cover;
+right: 0;
+bottom: 0;
+min-width: 50%;
+min-height:30%;
+-moz-osx-font-smoothing:grayscale;
+-ms-flex-direction:column;
+-webkit-box-direction:normal;
+-webkit-box-orient:vertical;
+-webkit-font-smoothing:antialiased;
+color:rgb(2, 0, 0);
+display:flex;
+flex-direction:column;
+font-family:Montserrat, sans-serif;
+font-size: 0.9em;
+font-weight:300;
+margin:0;
+min-height:100vh;
+padding:5%;
+}
+
+p {
+color:rgba(255, 255, 255, 0.9);
+font-size: 0.85cm;
+}
+
+
+nav {
+	margin: 0 auto;
+	max-width: 842px;
+	background: #0f0600d2;
+	box-shadow:0 3px 15px rgba(255, 0, 0, 0.15);
+}
+
+nav::after {
+	display: block;
+	content: '';
+	clear: both;
+}
+
+nav ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+nav ul li {
+	float: left;
+	position: relative;
+}
+
+nav ul li a {
+	display: block;
+	color: rgba(255, 255, 255, .9);
+	text-decoration: none;
+	padding: 1rem 2rem;
+	border-top: 2px solid transparent;
+	border-bottom: 2px solid transparent;
+	transition: all .3s ease-in-out;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background: rgba(235, 224, 224, 0.15);
+}
